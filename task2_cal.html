@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="task2_cal.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="text">
+        <button class="history" style="backgroundcolor:mistwhite; width:30px;" onclick="history()"><i class="fas fa-history"></i>
+        </button>
+        <input type="text" name="display" id="display">
+    </div>
+    <div class="extras">
+    <br>
+    <hr >
+    </div>
+    <div class="calculator">
+        <div class="table">
+            <table  style="border-collapse:collapse; border-spacing:0;">
+                <tr>
+                    <td><button class="btn clr" onclick="clearScreen()">C</button></td>
+                    <td><button class="btn clr" value="%" onclick="percent()">%</button></td>
+                    <td><button class="btn clr" onclick="backspace()"><i class="fal fa-backspace"></button></td>
+                    <td><button class="btn clr" value="/" onclick="onScreen('/')">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" value="7" onclick="onScreen('7')">7</button></td>
+                    <td><button class="btn" value="8" onclick="onScreen('8')">8</button></td>
+                    <td><button class="btn" value="9" onclick="onScreen('9')">9</button></td>
+                    <td><button class="btn clr" value="*" onclick="onScreen('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" value="4" onclick="onScreen('4')">4</button></td>
+                    <td><button class="btn" value="5" onclick="onScreen('5')">5</button></td>
+                    <td><button class="btn" value="6" onclick="onScreen('6')">6</button></td>
+                    <td><button class="btn clr" value="-" onclick="onScreen('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" value="1" onclick="onScreen('1')">1</button></td>
+                    <td><button class="btn" value="2" onclick="onScreen('2')">2</button></td>
+                    <td><button class="btn" value="3" onclick="onScreen('3')">3</button></td>
+                    <td><button class="btn clr" value="+" onclick="onScreen('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" value="00" onclick="onScreen('00')">00</button></td>
+                    <td><button class="btn" value="0" onclick="onScreen('0')">0</button></td>
+                    <td><button class="btn" value="." onclick="onScreen('.')">.</button></td>
+                    <td><button class="btn clr" value="=" onclick="operations()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="extras end">
+    <br>
+    <hr class="endh">
+    </div>
+    </div>
+    <script src="task2_cal.js"></script>
+</body>
+</html>
